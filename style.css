@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101820;
+    color: white;
+}
+
+/* TELA DE CAPA */
+
+.capa {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.8)),
+        url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1920&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.conteudo-capa {
+    padding: 30px;
+    max-width: 700px;
+}
+
+.subtitulo {
+    color: #b9d58a;
+    font-size: 13px;
+    letter-spacing: 4px;
+}
+
+.capa h1 {
+    font-size: 65px;
+    margin: 25px 0;
+    letter-spacing: 3px;
+    line-height: 1.1;
+}
+
+.capa h1 span {
+    color: #b9d58a;
+}
+
+.capa p {
+    font-size: 17px;
+    color: #dddddd;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.capa button {
+    background: #8ba85c;
+    color: white;
+    border: none;
+    padding: 17px 40px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.capa button:hover {
+    background: #6e8c43;
+    transform: scale(1.05);
+}
+
+.conteudo-capa small {
+    display: block;
+    margin-top: 30px;
+    color: #cccccc;
+    font-size: 12px;
+}
+
+/* TELA DA HISTÓRIA */
+
+.historia {
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #18251e;
+}
+
+.caixa-historia {
+    max-width: 650px;
+    background: #26392d;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px #00000050;
+}
+
+.caixa-historia h2 {
+    color: #b9d58a;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.caixa-historia p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #eeeeee;
+}
+
+.caixa-historia button {
+    padding: 13px 25px;
+    border: none;
+    background: #8ba85c;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .capa h1 {
+        font-size: 42px;
+    }
+
+    .capa p {
+        font-size: 14px;
+    }
+
+    .caixa-historia {
+        padding: 25px;
+    }
+}
